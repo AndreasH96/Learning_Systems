@@ -82,7 +82,46 @@ with $\gamma = \frac{1}{\sigma ^2}$, $k(\vec{u},\vec{v}) = e^{-\gamma || \vec{u}
 $h(x) =\frac{1}{\sum_{i=1}^{n} k(x,x^{(i)})} \sum_{i=1}^{n}k(x,x^{(i)}y^{(i)})$
 
 
+___
 
 
+# 2020:02:06
 
- 
+## **Classification**
+
+### **Logistic Regression**
+*   Classification method despite its name
+*   In a binary classification we want $y = 0$ or $y = 1$
+    *   but if you use a simple linear regression model $h_{\theta}(x) = \theta^{T}x$,then $h_{\theta}(x)$ can be $>1$ or $<0$
+*   The logistic regression model is defines so that 0 < h_{}... read slides
+* Error function : $E(\theta) = \frac{1}{n}\sum{cost}$ Check slides
+
+# 2020-02-11
+
+## **Overfitting and Generalization**
+* **Overfitting**
+  * Low Bias & High Variance
+* **Underfitting**
+  * High Bias & Low Variance
+
+The problem of overfitting occurs when a model is too adjusted for the training set. 
+In regression, overfitting/underfitting leads to drastically incorrect estimated values. In classification, it leads to bad estimation of classes.
+### What makes it more likely to overfit
+*   Not enough training examples ( small trainign dataset)
+*   Too many features
+*   Using a non-convinient type of models/hypothesis functions (e.g. too much complex for our problem/data)
+
+
+### Generalization Error
+* The training error is the error of the model $h_{\theta}$ on the training examples
+  * It is not an estimation of the error that the model $h_{\theta}$ will have when deployed and applied on new data
+* The **generalizaiton error** is the error of the model $h_{\theta}$ on new (unseen) data
+  * The generalization error is typically higher than the training error
+* How do we estimate the generalization error of some model?
+  * Using k-fold Cross Validation (**k-CV**)
+  * Using Leave-One-Out estimate (**LOO**)
+  
+
+
+# **2020:17:02**
+
