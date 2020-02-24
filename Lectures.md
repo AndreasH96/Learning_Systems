@@ -123,5 +123,18 @@ In regression, overfitting/underfitting leads to drastically incorrect estimated
   
 
 
-# **2020:17:02**
+# **2020:24:02**
 
+## **Artificial Neural Networks**
+
+* **Single Neuron**
+  * With a single neuron, our model is simply a linear model (similar to logistic regression if the sigmoid function is used as $h_{\theta}(x)$)
+*   **Neural network** (one hidden layer)
+    *   Gives a non-linear model
+* _**Notation**_
+  * $h_{\theta}(x)$ : vector of weights $\theta$
+  * $h_{\Theta}(x)$ : matrix of weights $\theta$
+  * $a_{i}^{(j)}$ : "activation" of unit $i$ in layer $j$
+  * $\Theta^{(j)}$ : matrix of weights (parameters) controlling the function mapping from layer $j$ to layer $j + 1$
+  
+  
